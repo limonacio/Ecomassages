@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Estilo Periódico</title>
+  <style>
+    /* Estilos base (Mobile First) */
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #B4BB72;
+      color: #222;
+      line-height: 1.5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .newspaper {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 25px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .article {
+      overflow: hidden; /* Limpiar floats */
+    }
+
+    .article img {
+      float: left;
+      width: 100%;
+      max-width: 300px;
+      margin-right: 20px;
+      margin-bottom: 15px;
+      border: 1px solid #999;
+      padding: 3px;
+      background: white;
+    }
+
+    p {
+      text-align: justify;
+      hyphens: auto;
+      margin-bottom: 15px;
+    }
+
+    /* Letra capital (estilo periódico antiguo) */
+    p:first-of-type::first-letter {
+      font-size: 3em;
+      float: left;
+      line-height: 0.8;
+      margin-right: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Media Queries para tablets y desktop */
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .article {
+        column-count: 2;
+        column-gap: 30px;
+      }
+
+      .article img {
+        shape-outside: rectangle(0, 0, 300px, 300px);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .article {
+        column-count: 2;
+      }
+    }
+
+    /* Ajustes para móviles pequeños */
+    @media (max-width: 400px) {
+      .article img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="newspaper">
+    <h1>About Us</h1>
+    
+    <div class="article">
+      <img src="./INFO/Caren and Lautaro.png" alt="Caren y Lautaro" />
+      
+      <p>We met while dancing bachata. Caren has extensive experience in the industry and in the hospitality industry for over 20 years.</p>
+          
+      <p>Lautaro, for his part, has been a Therapeutic Companion for over 10 years and has been studying massage therapy for about two years, with the same passion that characterizes him.</p>
+          
+      <p>We both dream of taking this to the next level and restoring physical relief and mental harmony to anyone who needs our services.</p>
+      
+      <p>We love what we do and dream of traveling and exploring different places and cultures around the world. We both have children and are committed daily to the pedagogy derived from Bioneuroemotion and Toltec Philosophy.</p>
+    </div>
+  </div>
+</body>
+</html>
